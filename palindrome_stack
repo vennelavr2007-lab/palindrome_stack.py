@@ -1,0 +1,15 @@
+def is_palindrome(text):
+    stack = list(text)
+    for char in text:
+        if char != stack.pop():
+            return False
+    return True
+text = input("Enter a string: ")
+if is_palindrome(text):
+    print("The string is a palindrome")
+else:
+    print("The string is not a palindrome")
+
+OUTPUT:
+Enter a string: VENNELA
+The string is not a palindrome
